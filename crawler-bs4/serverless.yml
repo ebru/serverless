@@ -1,0 +1,17 @@
+service: crawler-bs4
+
+provider:
+  name: aws
+  region: eu-west-1
+  runtime: python2.7
+
+functions:
+  main:
+    handler: handler.main
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
