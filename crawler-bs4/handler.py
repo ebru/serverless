@@ -15,7 +15,7 @@ def main(event, context):
     data = {
         'url': url,
         'date': str(datetime.datetime.now()),
-        'product': parse(url)
+        'parsedContent': parse(url)
     }
 
     return sendSuccess(data)
