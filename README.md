@@ -13,6 +13,7 @@ It scrapes the content of url given in the GET request.
 ### Test locally in serverless framework:
 
 ```
+$ cd crawler-bs4
 $ sls invoke local -f main --path events/sample.json
 ```
 
